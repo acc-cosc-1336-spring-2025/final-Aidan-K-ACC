@@ -25,4 +25,3 @@ def get_stock_list():
         templist= []
     return stocklist
 
-print(get_stock_list())
