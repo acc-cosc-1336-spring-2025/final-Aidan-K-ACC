@@ -14,13 +14,10 @@ class Stocks:
 
 
 def get_stock_list():
-    stocklist= [Stocks('AAPL','Apple Inc'),Stocks('CAT','Caterpillar'),Stocks('EK','Eastman Kodak'),Stocks('GOOG','Google'),Stocks('MSFT','Microsoft')]
-    return stocklist
-
-def display_stock_list(list):
+    stockdata= [Stocks('AAPL','Apple Inc'),Stocks('CAT','Caterpillar'),Stocks('EK','Eastman Kodak'),Stocks('GOOG','Google'),Stocks('MSFT','Microsoft')]
     stocklist= []
     templist= []
-    for item in list:
+    for item in stockdata:
         stock=item
         templist.append(item.symbol)
         templist.append(item.company_name)
@@ -28,4 +25,4 @@ def display_stock_list(list):
         templist= []
     return stocklist
 
-print(display_stock_list(get_stock_list()))
+print(get_stock_list())
